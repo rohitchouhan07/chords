@@ -444,18 +444,27 @@ case $chord in
 	EOF
 	;;
 	
-	*) cat <<-EOF
-	${yellow}Please entere a valid chord${reset}
+	-a) cat <<-EOF
+	${yellow}Made by RC${reset}
 	EOF
 	;;
 	
 	-h) cat <<-EOF
 	${yellow}Hello this is chords!! how can I help you?${reset}
+	type chord (name of the chord) to get the chord diagram
+	The follwing chords are available:-
+	A to G
+	1) a ... g
+	2) a7 ... g7
+	3) amaj7 ... gmaj7
+	4) am ... gm
+	5) am7 ... gm7
+	
 	EOF
 	;;
 	
-	-a) cat <<-EOF
-	${yellow}Made by RC${reset}
+	*) cat <<-EOF
+	${yellow}Please enter a valid chord name${reset}
 	EOF
 	;;
 esac
