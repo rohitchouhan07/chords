@@ -31,6 +31,18 @@ case $chord in
 	EOF
 	;;
 	
+	[Aa]5) cat <<-EOF
+	
+	${red}e |------x------|${reset}
+	${red}B |------x------|${reset}
+	${red}G |------x------|${reset}
+	${blue}${bold}D |------2------|${reset}
+	A |------0------|
+	${red}E |------x------|${reset}
+	
+	EOF
+	;;
+	
 	[Aa]maj7) cat <<-EOF
 	
 	${white}e |------0------|
@@ -54,6 +66,7 @@ case $chord in
 	
 	EOF
 	;;
+	
 	
 	[Aa]m) cat <<-EOF
 	
@@ -84,8 +97,20 @@ case $chord in
 	${blue}${bold}e |------2------|${reset}
 	${blue}${bold}B |------4------|${reset}
 	${blue}${bold}G |------4------|${reset}
-	D${blue}${bold} |------4------|${reset}
+	${blue}${bold}D |------4------|${reset}
 	A |------x------|
+	${red}E |------x------|${reset}
+	
+	EOF
+	;;
+	
+	[Bb]5) cat <<-EOF
+	
+	${red}e |------x------|${reset}
+	${red}B |------x------|${reset}
+	${red}G |------x------|${reset}
+	${blue}${bold}D |------4------|${reset}
+	${blue}${bold}A |------2------|${reset}
 	${red}E |------x------|${reset}
 	
 	EOF
@@ -151,6 +176,18 @@ case $chord in
 	EOF
 	;;
 	
+	[Cc]5) cat <<-EOF   
+	
+	${red}e |------x------|${reset}                                            
+	${red}B |------x------|${reset}
+	${red}G |------x------|${reset}
+	${blue}${bold}D |------5------|${reset}
+	${blue}${bold}A |------3------|${reset}
+	${red}E |------x------|${reset}
+	
+	EOF
+	;;
+	
 	[Cc]maj7) cat <<-EOF   
 	
 	e |------0------|                                            
@@ -202,6 +239,18 @@ case $chord in
 	[Dd]) cat <<-EOF   
 	
 	${blue}${bold}e |------2------|${reset}                                            
+	${blue}${bold}B |------3------|${reset}
+	${blue}${bold}G |------2------|${reset}
+	D |------0------|
+	${red}A |------x------|${reset}
+	${red}E |------x------|${reset}
+	
+	EOF
+	;;
+	
+	[Dd]5) cat <<-EOF   
+	
+	${red}e |------x------|${reset}                                            
 	${blue}${bold}B |------3------|${reset}
 	${blue}${bold}G |------2------|${reset}
 	D |------0------|
@@ -271,6 +320,18 @@ case $chord in
 	EOF
 	;;
 	
+	[Ee]5) cat <<-EOF   
+	
+	${red}e |------x------|${reset}                                          
+	${red}B |------x------|${reset}
+	${red}G |------x------|${reset}
+	${red}D |------x------|${reset}
+	${blue}${bold}A |------2------|${reset}
+	E |------0------|
+	
+	EOF
+	;;
+	
 	[Ee]maj7) cat <<-EOF   
 	
 	e |------0------|                                            
@@ -325,8 +386,20 @@ case $chord in
 	${blue}${bold}B |------1------|${reset}
 	${blue}${bold}G |------2------|${reset}
 	${blue}${bold}D |------3------|${reset}
-	${red}A |------x------|
-	${red}E |------x------|
+	${red}A |------x------|${reset}
+	${red}E |------x------|${reset}
+	
+	EOF
+	;;
+	
+	[Ff]5) cat <<-EOF   
+	
+	${red}e |------x------|${reset}                                    
+	${red}B |------x------|${reset}
+	${red}G |------x------|${reset}
+	${red}D |------x------|${reset}
+	${blue}${bold}A |------3------|${reset}
+	${blue}${bold}E |------1------|${reset}
 	
 	EOF
 	;;
@@ -386,6 +459,19 @@ case $chord in
 	G |------0------|
 	D |------0------|
 	${blue}${bold}A |------2------|${reset}
+	${blue}${bold}E |------3------|${reset}
+	
+	EOF
+	;;
+	
+	
+	[Gg]5) cat <<-EOF   
+	
+	${red}e |------x------|${reset}                                           
+	${red}B |------x------|
+	${red}G |------x------|
+	${red}D |------x------|
+	${blue}${bold}A |------5------|${reset}
 	${blue}${bold}E |------3------|${reset}
 	
 	EOF
@@ -459,6 +545,7 @@ case $chord in
 	3) amaj7 ... gmaj7
 	4) am ... gm
 	5) am7 ... gm7
+	6) a5 ... g5
 	
 	EOF
 	;;
